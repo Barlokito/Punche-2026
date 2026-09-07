@@ -1,0 +1,523 @@
+{
+  "project_name": "Punche Creativo - Casa Creativa & Agencia Publicitaria",
+  "theme": "light_editorial_popart",
+  "brand_identity": {
+    "name": "Punche Creativo",
+    "years_active": "10+ años en el mercado peruano",
+    "positioning": "Casa creativa enfocada en credibilidad, creatividad y eficacia de alto impacto. Activaciones, audiovisual, merchandising, branding y logística integral.",
+    "logo_url": "https://customer-assets-39nsmqrw.emergentagent.net/job_a1659526-6998-49ad-a958-446bebbd5d38/artifacts/l3isjz1s_Logo%202020.webp",
+    "aesthetic": "Pop-art meets Swiss Neo-Brutalism & Editorial Craft. Bold Roy Lichtenstein Ben-Day halftone textures, thick 2px-3px ink strokes, crisp sticker badges, starburst punch accents, paired with generous whitespace, high-legibility typography, and kinetic line-by-line masked reveals."
+  },
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#FAF8F5",
+        "on_bg": "#121212",
+        "on_bg_muted": "#525252",
+        "roles": {
+          "link": "#E62E4D",
+          "error": "#DC2626",
+          "success": "#16A34A"
+        }
+      },
+      {
+        "name": "panel_white",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#121212",
+        "on_bg_muted": "#525252",
+        "roles": {
+          "link": "#E62E4D",
+          "error": "#DC2626",
+          "success": "#16A34A"
+        }
+      },
+      {
+        "name": "panel_crimson",
+        "kind": "solid",
+        "bg": "#E62E4D",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#FFE4E8",
+        "roles": {
+          "link": "#F5E62B",
+          "error": "#FFFFFF",
+          "success": "#F5E62B"
+        }
+      },
+      {
+        "name": "panel_yellow",
+        "kind": "solid",
+        "bg": "#F5E62B",
+        "on_bg": "#121212",
+        "on_bg_muted": "#383838",
+        "roles": {
+          "link": "#E62E4D",
+          "error": "#DC2626",
+          "success": "#15803D"
+        }
+      },
+      {
+        "name": "panel_sky",
+        "kind": "solid",
+        "bg": "#8FC3E8",
+        "on_bg": "#0D2238",
+        "on_bg_muted": "#1E3A5F",
+        "roles": {
+          "link": "#E62E4D",
+          "error": "#991B1B",
+          "success": "#065F46"
+        }
+      },
+      {
+        "name": "panel_dark",
+        "kind": "solid",
+        "bg": "#121212",
+        "on_bg": "#FAF8F5",
+        "on_bg_muted": "#A3A3A3",
+        "roles": {
+          "link": "#F5E62B",
+          "error": "#F87171",
+          "success": "#4ADE80"
+        }
+      },
+      {
+        "name": "badge_punch",
+        "kind": "solid",
+        "bg": "#F5E62B",
+        "on_bg": "#121212",
+        "on_bg_muted": "#383838"
+      },
+      {
+        "name": "hero_scrim",
+        "kind": "image",
+        "contrast_against": "#121212",
+        "guarantee": "scrim: linear-gradient(135deg, rgba(18,18,18,0.85) 0%, rgba(18,18,18,0.60) 100%) with backdrop-blur-sm",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#D4D4D4",
+        "roles": {
+          "link": "#F5E62B",
+          "error": "#F87171",
+          "success": "#4ADE80"
+        }
+      },
+      {
+        "name": "glass_header",
+        "kind": "glass",
+        "contrast_against": "#FFFFFF",
+        "guarantee": "backdrop-blur-xl bg-[#FAF8F5]/90 border-b-2 border-black/10 saturate-150",
+        "on_bg": "#121212",
+        "on_bg_muted": "#525252",
+        "roles": {
+          "link": "#E62E4D",
+          "error": "#DC2626",
+          "success": "#16A34A"
+        }
+      }
+    ],
+    "accent": "#E62E4D",
+    "on_accent": "#FFFFFF",
+    "palette": {
+      "crimson": "#E62E4D",
+      "yellow": "#F5E62B",
+      "sky": "#8FC3E8",
+      "ink_black": "#121212",
+      "off_white": "#FAF8F5",
+      "paper_grid": "#EAE6DF",
+      "halftone_dot": "#D8D2C4"
+    }
+  },
+  "typography": {
+    "font_imports": [
+      "@fontsource-variable/space-grotesk",
+      "@fontsource-variable/dm-sans",
+      "@fontsource/ibm-plex-mono"
+    ],
+    "fonts": {
+      "heading": "'Space Grotesk Variable', sans-serif",
+      "body": "'DM Sans Variable', sans-serif",
+      "mono": "'IBM Plex Mono', monospace"
+    },
+    "scale_px": {
+      "display": 60,
+      "h1": 48,
+      "h2": 36,
+      "h3": 24,
+      "body": 16,
+      "caption": 14
+    },
+    "rules": {
+      "headings": "font-black tracking-tight uppercase leading-[0.95] text-ink_black",
+      "subheadings": "font-bold tracking-tight text-xl leading-snug",
+      "body": "font-normal leading-relaxed text-base tracking-normal",
+      "overlines": "font-mono text-xs uppercase tracking-[0.2em] font-semibold",
+      "pop_callouts": "font-black uppercase tracking-wider rotate-[-2deg]"
+    }
+  },
+  "entry_surfaces": {
+    "/": "editorial kinetic pop-art hero — split headline + masked punch reveal with logo left, interactive 3D sticker grid right"
+  },
+  "visual_enhancers": {
+    "halftone_pattern": "CSS radial-gradient dot grid: `background-image: radial-gradient(#121212 1.5px, transparent 1.5px); background-size: 16px 16px; opacity: 0.12;`",
+    "neo_brutalist_shadows": "Hard offset shadows with solid black borders: `border-2 border-black shadow-[4px_4px_0px_0px_#121212] hover:shadow-[6px_6px_0px_0px_#121212] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all duration-200`",
+    "pop_stickers": "Tilted pill badges and speech bubble motifs with `rotate-[-3deg]` or `rotate-[2deg]` to inject comic dynamism into structured grids",
+    "editorial_ribbon": "Slow drifting marquee with high-contrast badge items, starburst dividers (✦, ⚡, ★), and client logo ticker",
+    "cinematic_photography_frames": "Real stock photography clipped into hard-edged bordered frames with offset color blocks (yellow/crimson/sky) behind them."
+  },
+  "navigation_and_header": {
+    "structure": "Fixed glassmorphism bar with 2px ink bottom border: Brand Logo + Nav Links (Inicio, Nosotros, Servicios, Portafolio, Clientes, Contacto) + Primary CTA Button ('¡Hagamos Punche!') + Mobile Sheet Drawer",
+    "height_px": 76,
+    "bg": "glass_header with #FAF8F5/90 backdrop-blur-xl border-b-2 border-black/10",
+    "data_testids": {
+      "nav_brand": "nav-brand-logo",
+      "nav_link_inicio": "nav-link-inicio",
+      "nav_link_nosotros": "nav-link-nosotros",
+      "nav_link_servicios": "nav-link-servicios",
+      "nav_link_portafolio": "nav-link-portafolio",
+      "nav_link_clientes": "nav-link-clientes",
+      "nav_link_contacto": "nav-link-contacto",
+      "nav_cta_button": "nav-cta-contact-button",
+      "nav_mobile_toggle": "nav-mobile-menu-toggle"
+    }
+  },
+  "sections_blueprint": [
+    {
+      "id": "hero",
+      "name": "Hero Kinetic Reveal",
+      "layout": "Two-column asymmetric layout (60% editorial kinetic copy & brand punch, 40% interactive visual cluster with logo badge, metric chips, and live activation spotlight card)",
+      "content": {
+        "badge": "⚡ CASA CREATIVA • 10 AÑOS DE IMPACTO",
+        "headline_line_1": "LE METEMOS",
+        "headline_line_2": "PUNCHE A",
+        "headline_line_3": "TUS GRANDES IDEAS.",
+        "description": "Transformamos marcas e historias en experiencias memorables. Desde activaciones corporativas y festivales masivos hasta producción audiovisual cinematográfica, branding estratégico y merchandising de alto impacto.",
+        "cta_primary": "Cotiza Tu Proyecto",
+        "cta_secondary": "Ver Showreel 2026",
+        "stats_chips": [
+          {"value": "10+", "label": "Años Creando"},
+          {"value": "500+", "label": "Eventos y Campañas"},
+          {"value": "99%", "label": "Eficacia de Marca"}
+        ]
+      },
+      "motion": "Masked line-by-line reveal using motion.div with staggered easeOut delay, subtle 3D hover tilt on hero card, glowing comic starburst accents"
+    },
+    {
+      "id": "marquee",
+      "name": "Editorial Marquee Ribbon",
+      "layout": "Infinite smooth drift marquee with alternating brand pillars and client punchlines in IBM Plex Mono and Space Grotesk",
+      "items": [
+        "EVENTOS CORPORATIVOS & ACTIVACIONES",
+        "PRODUCCIÓN AUDIOVISUAL & DRONE",
+        "DISEÑO EDITORIAL & BRANDING",
+        "MERCHANDISING NACIONAL & IMPORTADO",
+        "LOGÍSTICA INTEGRAL & ESTRADOS",
+        "EXPERIENCIAS MEMORABLES CON VALOR AGREGADO"
+      ]
+    },
+    {
+      "id": "nosotros",
+      "name": "Manifiesto & Capítulos (Nosotros)",
+      "layout": "Editorial split layout: Left sticky manifesto chapter index (01. CURIOSIDAD, 02. EFICACIA, 03. IMPACTO, 04. CRECIMIENTO); Right dynamic chapter cards with bold pop-art frames, tactile icons, and agency story.",
+      "content": {
+        "badge": "CAPÍTULO 01 — NUESTRO ADN",
+        "title": "Somos una casa creativa enfocada en credibilidad y creatividad.",
+        "body_p1": "En Punche Creativo no creemos en soluciones tibias. Nos caracteriza la curiosidad insaciable que nos lleva a investigar, planificar y desplegar la estrategia precisa para que cada proyecto logre sus objetivos.",
+        "body_p2": "Logramos que las historias impacten de verdad, dejando una huella inolvidable gracias al valor agregado y la pasión que le ponemos a cada detalle.",
+        "pillars": [
+          {
+            "num": "01",
+            "title": "Curiosidad Estratégica",
+            "desc": "Preguntamos lo que otros obvian para hallar el ángulo creativo que conecta con tu audiencia real."
+          },
+          {
+            "num": "02",
+            "title": "Eficacia Comprobada",
+            "desc": "Creatividad sin resultados es solo adorno. Medimos y ejecutamos con precisión militar."
+          },
+          {
+            "num": "03",
+            "title": "Impacto Inolvidable",
+            "desc": "Diseñamos puestas en escena y narrativas audiovisuales que generan recordación a largo plazo."
+          },
+          {
+            "num": "04",
+            "title": "Crecimiento Continuo",
+            "desc": "Socios estratégicos de nuestros clientes: escalamos con ellos campaña tras campaña."
+          }
+        ]
+      }
+    },
+    {
+      "id": "servicios",
+      "name": "5 Pilares de Servicios",
+      "layout": "Interactive Tabbed / Bento Showcase for the 5 core offerings: 1. Eventos, 2. Audiovisual, 3. Merchandising, 4. Diseño e Impresión, 5. Logística. Each item features service detail breakdown, high-res stock photo, feature tags, and quick-quote trigger.",
+      "services_data": [
+        {
+          "id": "eventos",
+          "num": "01",
+          "name": "Eventos & Activaciones",
+          "tagline": "Puestas en escena que hacen vibrar a tu público",
+          "items": [
+            "Activaciones BTL & Promocionales",
+            "Eventos Corporativos & Galas",
+            "Aniversarios de Empresa",
+            "Lanzamientos de Producto",
+            "Gymkanas & Team Building",
+            "Campeonatos Deportivos & eSports"
+          ],
+          "badge_color": "yellow",
+          "image_key": "eventos"
+        },
+        {
+          "id": "audiovisual",
+          "num": "02",
+          "name": "Producción Audiovisual",
+          "tagline": "Narrativa cinematográfica con equipo de última generación",
+          "items": [
+            "Videos Institucionales & Corporativos",
+            "Spots Publicitarios (TV & Digital)",
+            "Tomas Aéreas con Drone 4K",
+            "Fotografía Comercial & de Producto",
+            "Cobertura en Vivo (Streaming)",
+            "Postproducción & Motion Graphics"
+          ],
+          "badge_color": "crimson",
+          "image_key": "audiovisual"
+        },
+        {
+          "id": "merchandising",
+          "num": "03",
+          "name": "Merchandising & Regalos Corporativos",
+          "tagline": "Productos que tu cliente realmente quiere conservar",
+          "items": [
+            "Merchandising Nacional Personalizado",
+            "Artículos Importados Exclusivos",
+            "Fabricación a Medida (Textil & Eco)",
+            "Kits de Onboarding & Welcome Packs",
+            "Packaging Creativo & Unboxing",
+            "Control de Calidad y Despacho Masivo"
+          ],
+          "badge_color": "sky",
+          "image_key": "merchandising"
+        },
+        {
+          "id": "diseno_impresion",
+          "num": "04",
+          "name": "Diseño Gráfico e Impresión",
+          "tagline": "Identidad visual contundente en digital y papel",
+          "items": [
+            "Logotipos & Sistemas de Branding",
+            "Manuales de Marca & Lineamientos",
+            "Revistas, Catálogos & Memorias",
+            "Agendas Corporativas & Cuadernos",
+            "Material POP & Gran Formato",
+            "Impresión Offset y Digital de Alta Definición"
+          ],
+          "badge_color": "yellow",
+          "image_key": "diseno_impresion"
+        },
+        {
+          "id": "logistica",
+          "num": "05",
+          "name": "Logística & Montaje Integral",
+          "tagline": "Infraestructura técnica impecable donde nada falla",
+          "items": [
+            "Alquiler de Mobiliario Lounge y Ejecutivo",
+            "Sistemas de Luces Inteligentes & Escenarios",
+            "Sonido Profesional Line Array",
+            "Estrados, Toldos y Estructuras Truss",
+            "Pantallas LED Gigantes & Proyección",
+            "Transporte, Montaje y Seguridad"
+          ],
+          "badge_color": "crimson",
+          "image_key": "logistica"
+        }
+      ]
+    },
+    {
+      "id": "portafolio",
+      "name": "Portafolio de Proyectos Destacados",
+      "layout": "Filterable pop-art gallery (Filtros: Todos, Eventos, Audiovisual, Merchandising, Diseño). Cards with hard offset shadows, category sticker, project metrics, client name, and modal preview drawer.",
+      "projects": [
+        {
+          "title": "Festival de Innovación Tech 2025",
+          "category": "Eventos",
+          "client": "Corporación Digital Andina",
+          "result": "+4,500 asistentes presenciales",
+          "desc": "Montaje completo de 3 escenarios, estrados, luces robóticas y transmisión en streaming para 12 países.",
+          "image": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjBldmVudCUyMGFjdGl2YXRpb24lMjBjb25jZXJ0JTIwY3Jvd2QlMjBzdGFnZXxlbnwwfHx8fDE3ODg4MDQxNjV8MA&ixlib=rb-4.1.0&q=85"
+        },
+        {
+          "title": "Campaña Audiovisual 'Fuerza & Origen'",
+          "category": "Audiovisual",
+          "client": "Minera del Sur",
+          "result": "Premio a Mejor Video Institucional",
+          "desc": "Rodaje cinematográfico con tomas de dron en altura, entrevistas y motion graphics bilingüe.",
+          "image": "https://images.unsplash.com/photo-1632187989763-c9c620420b4d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHx2aWRlbyUyMHByb2R1Y3Rpb24lMjBjYW1lcmElMjBkcm9uZSUyMGZpbG1pbmclMjBzZXR8ZW58MHx8fHwxNzg4ODA0MTY1fDA&ixlib=rb-4.1.0&q=85"
+        },
+        {
+          "title": "Kits de Bienvenida 'Eco-Impacto'",
+          "category": "Merchandising",
+          "client": "Financiera Futuro",
+          "result": "12,000 unidades despachadas a nivel nacional",
+          "desc": "Fabricación sostenible de mochilas, tomatodos térmicos y libretas con packaging serigrafiado.",
+          "image": "https://images.unsplash.com/photo-1416339134316-0e91dc9ded92?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHxtZXJjaGFuZGlzZSUyMGJyYW5kZWQlMjBhcHBhcmVsJTIwcHJpbnQlMjBkZXNpZ24lMjBzdHVkaW98ZW58MHx8fHwxNzg4ODA0MTY1fDA&ixlib=rb-4.1.0&q=85"
+        },
+        {
+          "title": "Rediseño de Identidad & Memoria Anual",
+          "category": "Diseño",
+          "client": "Grupo Logístico Pacífico",
+          "result": "Manual de marca integral + 500 libros de lujo",
+          "desc": "Nueva arquitectura de marca con acabados en pan de oro, encuadernación rústica y versión digital interactiva.",
+          "image": "https://images.unsplash.com/photo-1663433541063-ddab084d1126?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwzfHxtZXJjaGFuZGlzZSUyMGJyYW5kZWQlMjBhcHBhcmVsJTIwcHJpbnQlMjBkZXNpZ24lMjBzdHVkaW98ZW58MHx8fHwxNzg4ODA0MTY1fDA&ixlib=rb-4.1.0&q=85"
+        },
+        {
+          "title": "Convención Nacional & Aniversario 25 Años",
+          "category": "Eventos",
+          "client": "Cadena Retail Perú",
+          "result": "Producción 360° en 4 ciudades",
+          "desc": "Activación simultánea con dinámicas de gymkana corporativa, campeonato de integración y cena de gala.",
+          "image": "https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwyfHxjb3Jwb3JhdGUlMjBldmVudCUyMGFjdGl2YXRpb24lMjBjb25jZXJ0JTIwY3Jvd2QlMjBzdGFnZXxlbnwwfHx8fDE3ODg4MDQxNjV8MA&ixlib=rb-4.1.0&q=85"
+        },
+        {
+          "title": "Montaje Escénico & Domo Audiovisual",
+          "category": "Logística",
+          "client": "Cumbre de Sostenibilidad",
+          "result": "Estructura auto-portante de 600m²",
+          "desc": "Mobiliario ergonómico a medida, microfonía inalámbrica digital y pantalla envolvente curva de 180°.",
+          "image": "https://images.unsplash.com/photo-1583795484071-3c453e3a7c71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHw0fHxjb3Jwb3JhdGUlMjBldmVudCUyMGFjdGl2YXRpb24lMjBjb25jZXJ0JTIwY3Jvd2QlMjBzdGFnZXxlbnwwfHx8fDE3ODg4MDQxNjV8MA&ixlib=rb-4.1.0&q=85"
+        }
+      ]
+    },
+    {
+      "id": "clientes",
+      "name": "Muro de Clientes & Confianza",
+      "layout": "High-density grid of recognized Peruvian & regional brand logos and trusted partners with testimonial quotes and metric highlights",
+      "trusted_sectors": [
+        "Consumo Masivo", "Banca y Finanzas", "Minería y Energía", "Retail y Moda", "Educación Superior", "Tecnología y Telecom"
+      ]
+    },
+    {
+      "id": "contacto",
+      "name": "Formulario de Contacto & Cotizador Rápido",
+      "layout": "Split card with Neo-Brutalist styling: Left side with direct WhatsApp punch trigger, agency contact info (Lima, Perú), and response SLA; Right side with interactive React Hook / Pydantic integrated Form that saves directly to the backend database.",
+      "form_fields": [
+        {"name": "full_name", "label": "Nombre Completo / Empresa", "type": "text", "required": true},
+        {"name": "email", "label": "Correo Electrónico", "type": "email", "required": true},
+        {"name": "phone", "label": "Teléfono / WhatsApp", "type": "tel", "required": true},
+        {"name": "service_type", "label": "Servicio de Interés", "type": "select", "options": ["Eventos y Activaciones", "Audiovisual y Drone", "Merchandising", "Diseño e Impresión", "Logística y Montaje", "Paquete Integral 360°"], "required": true},
+        {"name": "estimated_date", "label": "Fecha Estimada del Evento / Entrega", "type": "text", "required": false},
+        {"name": "message", "label": "¿Cuéntanos los detalles de tu proyecto?", "type": "textarea", "required": true}
+      ]
+    },
+    {
+      "id": "footer",
+      "name": "Footer Editorial de Gran Escala",
+      "layout": "Deep dark surface with massive outline typography ('PUNCHE CREATIVO'), contact data, social links, location map indicator, and copyright note."
+    }
+  ],
+  "image_urls": {
+    "brand_logo": {
+      "url": "https://customer-assets-39nsmqrw.emergentagent.net/job_a1659526-6998-49ad-a958-446bebbd5d38/artifacts/l3isjz1s_Logo%202020.webp",
+      "category": "logo",
+      "description": "Logo oficial Punche Creativo con puño pop-art, banners inclinados rojo/celeste y texto blanco"
+    },
+    "eventos_hero_and_gallery": {
+      "url": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjBldmVudCUyMGFjdGl2YXRpb24lMjBjb25jZXJ0JTIwY3Jvd2QlMjBzdGFnZXxlbnwwfHx8fDE3ODg4MDQxNjV8MA&ixlib=rb-4.1.0&q=85",
+      "category": "services/eventos",
+      "description": "Multitud en evento corporativo con iluminación de escenario de alta calidad"
+    },
+    "eventos_concert_stage": {
+      "url": "https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwyfHxjb3Jwb3JhdGUlMjBldmVudCUyMGFjdGl2YXRpb24lMjBjb25jZXJ0JTIwY3Jvd2QlMjBzdGFnZXxlbnwwfHx8fDE3ODg4MDQxNjV8MA&ixlib=rb-4.1.0&q=85",
+      "category": "services/eventos",
+      "description": "Público e iluminación en convención masiva y concierto"
+    },
+    "audiovisual_set_filming": {
+      "url": "https://images.unsplash.com/photo-1632187989763-c9c620420b4d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHx2aWRlbyUyMHByb2R1Y3Rpb24lMjBjYW1lcmElMjBkcm9uZSUyMGZpbG1pbmclMjBzZXR8ZW58MHx8fHwxNzg4ODA0MTY1fDA&ixlib=rb-4.1.0&q=85",
+      "category": "services/audiovisual",
+      "description": "Set de filmación profesional y equipo de dirección audiovisual en estudio"
+    },
+    "audiovisual_camera_rig": {
+      "url": "https://images.unsplash.com/photo-1619099619226-f96e319e3732?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHw0fHx2aWRlbyUyMHByb2R1Y3Rpb24lMjBjYW1lcmElMjBkcm9uZSUyMGZpbG1pbmclMjBzZXR8ZW58MHx8fHwxNzg4ODA0MTY1fDA&ixlib=rb-4.1.0&q=85",
+      "category": "services/audiovisual",
+      "description": "Cámara broadcast cinematográfica en trípode para rodajes de alto nivel"
+    },
+    "merchandising_flatlay": {
+      "url": "https://images.unsplash.com/photo-1416339134316-0e91dc9ded92?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHxtZXJjaGFuZGlzZSUyMGJyYW5kZWQlMjBhcHBhcmVsJTIwcHJpbnQlMjBkZXNpZ24lMjBzdHVkaW98ZW58MHx8fHwxNzg4ODA0MTY1fDA&ixlib=rb-4.1.0&q=85",
+      "category": "services/merchandising",
+      "description": "Mesa de diseño con artículos corporativos, textiles y branding físico"
+    },
+    "diseno_impresion_workshop": {
+      "url": "https://images.unsplash.com/photo-1663433541063-ddab084d1126?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwzfHxtZXJjaGFuZGlzZSUyMGJyYW5kZWQlMjBhcHBhcmVsJTIwcHJpbnQlMjBkZXNpZ24lMjBzdHVkaW98ZW58MHx8fHwxNzg4ODA0MTY1fDA&ixlib=rb-4.1.0&q=85",
+      "category": "services/diseno_impresion",
+      "description": "Taller de serigrafía e impresión especializada de gran formato"
+    },
+    "logistica_lights_stage": {
+      "url": "https://images.unsplash.com/photo-1583795484071-3c453e3a7c71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHw0fHxjb3Jwb3JhdGUlMjBldmVudCUyMGFjdGl2YXRpb24lMjBjb25jZXJ0JTIwY3Jvd2QlMjBzdGFnZXxlbnwwfHx8fDE3ODg4MDQxNjV8MA&ixlib=rb-4.1.0&q=85",
+      "category": "services/logistica",
+      "description": "Montaje de estructura, sonido profesional y estrados iluminados para eventos"
+    }
+  },
+  "motion": {
+    "smooth_scroll": "Lenis smooth scroll integration on root layout for weighted cinematic momentum",
+    "framer_motion_variants": {
+      "line_reveal": {
+        "initial": {"y": "100%", "opacity": 0},
+        "animate": {"y": 0, "opacity": 1},
+        "transition": {"duration": 0.8, "ease": [0.16, 1, 0.3, 1]}
+      },
+      "stagger_container": {
+        "initial": {},
+        "animate": {"transition": {"staggerChildren": 0.15}}
+      },
+      "card_pop": {
+        "hover": {"y": -6, "scale": 1.01, "transition": {"duration": 0.2, "ease": "easeOut"}}
+      }
+    }
+  },
+  "accessibility": {
+    "wcag_compliance": "WCAG 2.1 AA & APCA standards with high contrast borders, explicit text color tokens, and aria attributes",
+    "testing_attributes": "All buttons, inputs, links, tabs, and filter controls MUST have dedicated data-testid attributes",
+    "reduced_motion": "Respect prefers-reduced-motion media query by disabling parallax/large transforms"
+  },
+  "component_paths": {
+    "css_entry": "/app/frontend/src/index.css",
+    "app_shell": "/app/frontend/src/App.tsx",
+    "home_page": "/app/frontend/src/pages/Home.tsx",
+    "components": {
+      "header": "/app/frontend/src/components/Header.tsx",
+      "hero": "/app/frontend/src/components/Hero.tsx",
+      "marquee": "/app/frontend/src/components/MarqueeRibbon.tsx",
+      "about": "/app/frontend/src/components/AboutManifesto.tsx",
+      "services": "/app/frontend/src/components/ServicesShowcase.tsx",
+      "portfolio": "/app/frontend/src/components/PortfolioGrid.tsx",
+      "clients": "/app/frontend/src/components/ClientsWall.tsx",
+      "contact": "/app/frontend/src/components/ContactSection.tsx",
+      "footer": "/app/frontend/src/components/Footer.tsx"
+    },
+    "backend": {
+      "server": "/app/backend/server.py",
+      "db": "/app/backend/lib/db.py",
+      "contact_router": "/app/backend/routers/contact.py",
+      "models": "/app/backend/models/contact.py"
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. Setup CSS Theme Tokens: In /app/frontend/src/index.css, import '@fontsource-variable/space-grotesk', '@fontsource-variable/dm-sans', and '@fontsource/ibm-plex-mono'. Configure font families and pop-art / neo-brutalist custom utilities (halftone dot background pattern, hard offset box-shadows, starburst punch accents).",
+    "2. Maintain strict TypeScript types across all components. Avoid 'any'.",
+    "3. Implement Lenis smooth scrolling or smooth kinetic feel using framer-motion (motion/react).",
+    "4. Ensure the official Logo (webp asset provided) is featured in the Header, the Hero 3D punch reveal card, and the Footer.",
+    "5. Build the Backend Contact Inquiry API in FastAPI: POST /api/contact, GET /api/contact/inquiries (for admin review/confirmation), saving submissions with timestamp, id, status, and lead source to MongoDB with proper Pydantic schemas and indexed fields.",
+    "6. Build an interactive Contact section with instant feedback via Sonner toast notifications and interactive quote calculator / service selector.",
+    "7. Implement all 5 service pillars exactly as requested by the advertiser: 1. Eventos (Activaciones, Corporativos, Aniversarios, Lanzamientos, Gymkanas, Campeonatos), 2. Audiovisual (Videos Institucionales, Publicitarios, Drone, Fotografía), 3. Merchandising (Nacional, Importados, Fabricación), 4. Diseño e Impresión (Logo, Branding, Revistas, Agendas, Manual de marca), 5. Logística (Mobiliario, Luces, Sonido, Estrados).",
+    "8. Populate the Clients & Brands section with high-profile Peruvian and multinational brand categories and compelling testimonial cards.",
+    "9. Add data-testid to every single button, nav link, tab, filter, and input element for automated testing reliability."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": {
+    "spacing": "Generous Spacing: Use py-20 to py-32 for section containers. Add internal padding to bordered cards to prevent collision.",
+    "interactivity": "Every interactive card should have hover micro-interactions: slight lift (-translate-y-1), shadow expansion (shadow-[6px_6px_0px_#121212]), and button click bounce.",
+    "toasts": "Use Sonner for all user notifications (contact form sent, quotation initiated).",
+    "typography": "Use Space Grotesk Variable with font-black / tracking-tight for headers, IBM Plex Mono for badges/numbers/metadata, and DM Sans for readable body copy."
+  }
+}

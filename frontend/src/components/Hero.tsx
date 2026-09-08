@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import type { MouseEvent, ReactNode } from "react";
 import { motion, useMotionValue, useScroll, useSpring, useTransform } from "motion/react";
-import { ArrowDownRight, Play, Zap } from "lucide-react";
-import { LOGO_URL } from "@/lib/content";
+import { ArrowDownRight, Play } from "lucide-react";
+import { DRIVE_URL, LOGO_URL } from "@/lib/content";
 import { Spark, Starburst } from "@/components/decor";
 
 function MaskedLine({ children, delay }: { children: ReactNode; delay: number }) {
@@ -58,17 +58,6 @@ export function Hero() {
 
       <div className="mx-auto grid max-w-7xl gap-14 px-4 pb-20 pt-14 sm:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:pb-28 lg:pt-20">
         <div>
-          <motion.div
-            initial={{ opacity: 0, y: -14, rotate: -4 }}
-            animate={{ opacity: 1, y: 0, rotate: -2 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            className="mb-8 inline-flex items-center gap-2 border-2 border-ink bg-punche-yellow px-4 py-2 font-mono text-xs font-semibold uppercase tracking-[0.18em] shadow-pop-sm"
-            data-testid="hero-badge"
-          >
-            <Zap className="h-4 w-4" />
-            Casa creativa · 10 años de impacto
-          </motion.div>
-
           <h1 className="font-heading text-5xl font-black uppercase leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">
             <MaskedLine delay={0.15}>Le metemos</MaskedLine>
             <MaskedLine delay={0.3}>
@@ -108,7 +97,9 @@ export function Hero() {
               <ArrowDownRight className="h-5 w-5" />
             </a>
             <a
-              href="#portafolio"
+              href={DRIVE_URL}
+              target="_blank"
+              rel="noreferrer"
               data-testid="hero-cta-showreel"
               className="inline-flex items-center gap-2 border-2 border-ink bg-white px-7 py-4 font-heading text-base font-bold uppercase tracking-wide text-ink shadow-pop-sm transition-transform duration-200 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-pop"
             >
@@ -168,22 +159,6 @@ export function Hero() {
                 </p>
               </div>
             </motion.div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30, rotate: -8 }}
-            animate={{ opacity: 1, y: 0, rotate: -5 }}
-            transition={{ duration: 0.8, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="absolute -bottom-10 -left-6 hidden w-52 border-2 border-ink bg-white p-2 shadow-pop md:block"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1545864968-f6031e1790c2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwzfHxkcm9uZSUyMGZseWluZyUyMGFlcmlhbCUyMGZpbG1pbmclMjBzdW5zZXR8ZW58MHx8fHwxNzg4ODA0MjQyfDA&ixlib=rb-4.1.0&q=85"
-              alt="Drone en grabación aérea"
-              className="h-28 w-full border-2 border-ink object-cover"
-            />
-            <p className="px-1 pt-2 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-ink/60">
-              Spot aéreo · Drone 4K
-            </p>
           </motion.div>
 
           <Starburst className="animate-spin-slow absolute -right-8 -top-8 h-20 w-20 text-crimson" />

@@ -5,7 +5,6 @@ import { Hero } from "@/components/Hero";
 import { MarqueeRibbon } from "@/components/MarqueeRibbon";
 import { AboutManifesto } from "@/components/AboutManifesto";
 import { ServicesShowcase } from "@/components/ServicesShowcase";
-import { PortfolioGrid } from "@/components/PortfolioGrid";
 import { ClientsWall } from "@/components/ClientsWall";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
@@ -36,7 +35,6 @@ export default function Home() {
         <MarqueeRibbon />
         <AboutManifesto />
         <ServicesShowcase onQuote={setQuoteService} />
-        <PortfolioGrid />
         <ClientsWall />
         <ContactSection preselected={quoteService} />
       </main>

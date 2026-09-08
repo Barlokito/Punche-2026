@@ -27,15 +27,23 @@ Publicista peruano con 10 años de trayectoria y su agencia creativa "Punche Cre
 - Motion: `motion/react` (reveals, tilt 3D, parallax hero), `lenis` smooth scroll con anchors.
 
 ## Implementado (2026-09-07)
-- Hero cinético con reveal línea por línea, tarjeta 3D con logo, foto sticker drone, stats.
+- Hero cinético con reveal línea por línea, tarjeta 3D con logo, stats.
 - Marquee editorial infinito.
 - Manifiesto numerado 01–04 (curiosidad, eficacia, impacto, crecimiento) sticky.
 - Showcase interactivo de los 5 servicios (tabs + panel animado + "Cotizar" preselecciona el servicio en el formulario).
-- Portafolio filtrable (6 proyectos de muestra) con animación de layout.
-- Muro de clientes (8 marcas SAMPLE), sectores, 2 testimonios SAMPLE.
 - Contacto: info + WhatsApp + formulario a MongoDB con toast y panel de éxito.
-- Footer editorial con tipografía gigante outline y redes sociales (enlaces de ejemplo).
-- Verificado: curl POST/GET /api/contact (local y URL pública), 422 en body inválido, `yarn typecheck` limpio, flujo e2e en navegador (tabs, filtros, preselección, envío y confirmación).
+- Footer editorial con tipografía gigante outline.
+- Verificado: curl POST/GET /api/contact (local y URL pública), 422 en body inválido, `yarn typecheck` limpio, flujo e2e en navegador.
+
+## Cambios (2026-09-08, pedido del dueño)
+- Header sin logo/texto ni botón "Hagamos Punche"; nav sin Portafolio.
+- Hero sin badge "Casa creativa" ni foto de drone; "Ver portafolio" abre el Drive del cliente.
+- Nosotros: overline solo "Nuestro ADN"; sin chips de pilares.
+- Sección Portafolio interna ELIMINADA (componente PortfolioGrid borrado); testimonios ELIMINADOS.
+- Clientes: collage de logos reales (clientes.webp adjunto).
+- Fotos reales adjuntas en servicios: eventos.webp y merchandising.webp.
+- Contacto real: email fernandoh@punchecreativo.pe (confirmar dominio: el dueño escribió sin TLD), móvil/WhatsApp +51 945 639 059, fijo 01 761 6464 (botón tel:), sin badge "24h".
+- Redes: solo LinkedIn (linkedin.com/company/punche-creativo).
 
 ## Backlog
 - P0: Datos de contacto reales (WhatsApp, email, redes), logos y fotos reales de clientes/proyectos.

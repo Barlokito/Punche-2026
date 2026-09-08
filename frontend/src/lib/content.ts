@@ -30,7 +30,7 @@ export const SERVICES: Service[] = [
     ],
     accent: "yellow",
     image:
-      "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwxfHxjb25jZXJ0JTIwZXZlbnQlMjBzdGFnZSUyMGxpZ2h0cyUyMGNyb3dkfGVufDB8fHx8MTc4ODgwNDIzMnww&ixlib=rb-4.1.0&q=85",
+      "https://customer-assets-lqy194kg.emergentagent.net/job_punhe-creativo/artifacts/r8gbmr5b_eventos.webp",
     quoteValue: "Eventos y Activaciones",
   },
   {
@@ -66,7 +66,7 @@ export const SERVICES: Service[] = [
     ],
     accent: "sky",
     image:
-      "https://images.unsplash.com/photo-1708577907839-1240466aee53?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwzfHxicmFuZGVkJTIwbWVyY2hhbmRpc2UlMjB0c2hpcnQlMjBwcmludGluZ3xlbnwwfHx8fDE3ODg4MDQyMzJ8MA&ixlib=rb-4.1.0&q=85",
+      "https://customer-assets-lqy194kg.emergentagent.net/job_punhe-creativo/artifacts/l9npxgol_merchandising.webp",
     quoteValue: "Merchandising",
   },
   {
@@ -107,89 +107,11 @@ export const SERVICES: Service[] = [
   },
 ];
 
-export interface Project {
-  title: string;
-  category: string;
-  client: string;
-  result: string;
-  desc: string;
-  image: string;
-  accent: Accent;
-}
+export const CLIENTS_COLLAGE_URL =
+  "https://customer-assets-lqy194kg.emergentagent.net/job_punhe-creativo/artifacts/1tmznvzv_clientes.webp";
 
-export const PROJECTS: Project[] = [
-  {
-    title: "Festival de Innovación Tech",
-    category: "Eventos",
-    client: "Corporación Digital Andina",
-    result: "+4,500 asistentes",
-    desc: "Tres escenarios, estrados, luces robóticas y streaming para 12 países.",
-    image:
-      "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHw0fHxjb25jZXJ0JTIwZXZlbnQlMjBzdGFnZSUyMGxpZ2h0cyUyMGNyb3dkfGVufDB8fHx8MTc4ODgwNDIzMnww&ixlib=rb-4.1.0&q=85",
-    accent: "yellow",
-  },
-  {
-    title: "Campaña “Fuerza & Origen”",
-    category: "Audiovisual",
-    client: "Minera del Sur",
-    result: "Video institucional premiado",
-    desc: "Rodaje cinematográfico con tomas de drone, entrevistas y motion graphics.",
-    image:
-      "https://images.unsplash.com/photo-1625690303837-654c9666d2d0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHx2aWRlbyUyMHByb2R1Y3Rpb24lMjBjYW1lcmElMjBjcmV3JTIwZmlsbWluZ3xlbnwwfHx8fDE3ODg4MDQyMzJ8MA&ixlib=rb-4.1.0&q=85",
-    accent: "crimson",
-  },
-  {
-    title: "Kits de Bienvenida “Eco-Impacto”",
-    category: "Merchandising",
-    client: "Financiera Futuro",
-    result: "12,000 unidades despachadas",
-    desc: "Mochilas, tomatodos térmicos y libretas con packaging serigrafiado.",
-    image:
-      "https://images.unsplash.com/photo-1686933966456-b4d38fbdb124?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwxfHxwcm9tb3Rpb25hbCUyMHByb2R1Y3RzJTIwYnJhbmRlZCUyMG11Z3MlMjB0b3RlJTIwYmFnc3xlbnwwfHx8fDE3ODg4MDQyNDJ8MA&ixlib=rb-4.1.0&q=85",
-    accent: "sky",
-  },
-  {
-    title: "Identidad & Memoria Anual",
-    category: "Diseño",
-    client: "Grupo Logístico Pacífico",
-    result: "Manual de marca + 500 libros",
-    desc: "Nueva arquitectura de marca con acabados premium y versión digital.",
-    image:
-      "https://images.unsplash.com/photo-1503694978374-8a2fa686963a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHwxfHxvcmZmc2V0JTIwcHJpbnRpbmclMjBwcmVzcyUyMG1hY2hpbmUlMjBpbmt8ZW58MHx8fHwxNzg4ODA0MjQyfDA&ixlib=rb-4.1.0&q=85",
-    accent: "yellow",
-  },
-  {
-    title: "Convención & Aniversario 25",
-    category: "Eventos",
-    client: "Cadena Retail Perú",
-    result: "Producción 360° en 4 ciudades",
-    desc: "Gymkana corporativa, campeonato de integración y cena de gala.",
-    image:
-      "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwzfHxjb25jZXJ0JTIwZXZlbnQlMjBzdGFnZSUyMGxpZ2h0cyUyMGNyb3dkfGVufDB8fHx8MTc4ODgwNDIzMnww&ixlib=rb-4.1.0&q=85",
-    accent: "crimson",
-  },
-  {
-    title: "Montaje Escénico & Domo AV",
-    category: "Logística",
-    client: "Cumbre de Sostenibilidad",
-    result: "Estructura de 600 m²",
-    desc: "Mobiliario a medida, microfonía digital y pantalla envolvente de 180°.",
-    image:
-      "https://images.unsplash.com/photo-1783979384797-7a5d2ad23fc8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwzfHxjb3Jwb3JhdGUlMjBldmVudCUyMGNvbmZlcmVuY2UlMjBzdGFnZSUyMHNldHVwfGVufDB8fHx8MTc4ODgwNDIzMnww&ixlib=rb-4.1.0&q=85",
-    accent: "sky",
-  },
-];
-
-export const CLIENTS = [
-  "Grupo Andino",
-  "Banca Futuro",
-  "Retail Pacífico",
-  "Minera del Sur",
-  "TecnoTel",
-  "Universidad Prisma",
-  "Alimentos del Valle",
-  "Moda Costa",
-];
+export const DRIVE_URL =
+  "https://drive.google.com/drive/u/0/folders/1_0HmxVGS4JcQFfd0tW3VneQEEZU6RPYo";
 
 export const SECTORS = [
   "Consumo Masivo",
@@ -201,9 +123,11 @@ export const SECTORS = [
 ];
 
 export const CONTACT = {
-  whatsapp: "+51 999 888 777",
-  whatsappLink: "https://wa.me/51999888777",
-  email: "hola@punchecreativo.pe",
+  whatsapp: "+51 945 639 059",
+  whatsappLink: "https://wa.me/51945639059",
+  landline: "01 761 6464",
+  landlineLink: "tel:+5117616464",
+  email: "fernandoh@punchecreativo.pe",
   location: "Lima, Perú",
   hours: "Lun – Sáb · 9:00 a 19:00",
 };

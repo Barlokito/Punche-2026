@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { Menu, X, Zap } from "lucide-react";
-import { LOGO_URL } from "@/lib/content";
+import { Menu, X } from "lucide-react";
 
 const LINKS = [
   { href: "#inicio", label: "Inicio", testid: "nav-link-inicio" },
   { href: "#nosotros", label: "Nosotros", testid: "nav-link-nosotros" },
   { href: "#servicios", label: "Servicios", testid: "nav-link-servicios" },
-  { href: "#portafolio", label: "Portafolio", testid: "nav-link-portafolio" },
   { href: "#clientes", label: "Clientes", testid: "nav-link-clientes" },
   { href: "#contacto", label: "Contacto", testid: "nav-link-contacto" },
 ];
@@ -31,20 +29,8 @@ export function Header() {
           : "border-transparent bg-transparent"
       }`}
     >
-      <div className="mx-auto flex h-[76px] max-w-7xl items-center justify-between px-4 sm:px-6">
-        <a href="#inicio" data-testid="nav-brand-logo" className="flex items-center gap-3">
-          <img
-            src={LOGO_URL}
-            alt="Punche Creativo"
-            className="h-12 w-auto border-2 border-ink bg-white object-contain p-1 shadow-pop-sm"
-          />
-          <span className="hidden font-heading text-sm font-black uppercase leading-none tracking-tight sm:block">
-            Punche
-            <span className="block text-crimson">Creativo</span>
-          </span>
-        </a>
-
-        <nav className="hidden items-center gap-6 lg:flex">
+      <div className="mx-auto flex h-[76px] max-w-7xl items-center justify-end px-4 sm:px-6 lg:justify-center">
+        <nav className="hidden items-center gap-8 lg:flex">
           {LINKS.map((l) => (
             <a
               key={l.href}
@@ -57,25 +43,15 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
-          <a
-            href="#contacto"
-            data-testid="nav-cta-contact-button"
-            className="hidden items-center gap-2 border-2 border-ink bg-crimson px-5 py-2.5 font-heading text-sm font-bold uppercase tracking-wide text-white shadow-pop-sm transition-transform duration-200 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-pop sm:inline-flex"
-          >
-            <Zap className="h-4 w-4" />
-            ¡Hagamos Punche!
-          </a>
-          <button
-            type="button"
-            data-testid="nav-mobile-menu-toggle"
-            aria-label="Abrir menú"
-            onClick={() => setOpen((v) => !v)}
-            className="inline-flex h-11 w-11 items-center justify-center border-2 border-ink bg-punche-yellow text-ink shadow-pop-sm lg:hidden"
-          >
-            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </button>
-        </div>
+        <button
+          type="button"
+          data-testid="nav-mobile-menu-toggle"
+          aria-label="Abrir menú"
+          onClick={() => setOpen((v) => !v)}
+          className="inline-flex h-11 w-11 items-center justify-center border-2 border-ink bg-punche-yellow text-ink shadow-pop-sm lg:hidden"
+        >
+          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        </button>
       </div>
 
       <AnimatePresence>

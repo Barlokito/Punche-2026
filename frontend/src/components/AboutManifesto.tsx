@@ -38,7 +38,7 @@ export function AboutManifesto() {
       <div className="mx-auto grid max-w-7xl gap-14 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="lg:sticky lg:top-28 lg:self-start">
           <Reveal>
-            <Overline className="text-crimson">Capítulo 01 — Nuestro ADN</Overline>
+            <Overline className="text-crimson">Nuestro ADN</Overline>
             <h2 className="mt-4 font-heading text-4xl font-black uppercase leading-[0.95] tracking-tight sm:text-5xl">
               Una casa creativa con
               <span className="text-crimson"> credibilidad</span> y
@@ -58,18 +58,6 @@ export function AboutManifesto() {
               Logramos que las historias impacten de verdad, dejando una experiencia
               inolvidable por el valor agregado que le brindamos a tu público.
             </p>
-          </Reveal>
-          <Reveal delay={0.25}>
-            <div className="mt-8 flex flex-wrap gap-2">
-              {CHAPTERS.map((c) => (
-                <span
-                  key={c.num}
-                  className="border-2 border-ink bg-white px-3 py-1.5 font-mono text-[11px] font-semibold uppercase tracking-[0.16em] shadow-pop-sm"
-                >
-                  {c.num} · {c.title}
-                </span>
-              ))}
-            </div>
           </Reveal>
         </div>
 

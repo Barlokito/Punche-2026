@@ -2,7 +2,7 @@ import { useState } from "react";
 import type { FormEvent } from "react";
 import { useMutation } from "@tanstack/react-query";
 import { toast } from "sonner";
-import { Clock, Mail, MapPin, MessageCircle, Send } from "lucide-react";
+import { Clock, Mail, MapPin, MessageCircle, Phone, Send } from "lucide-react";
 import { apiPost } from "@/lib/api";
 import { CONTACT } from "@/lib/content";
 import { Overline, Reveal } from "@/components/decor";
@@ -211,16 +211,26 @@ export function ContactSection({ preselected }: { preselected: string | null }) 
           </Reveal>
 
           <Reveal delay={0.15}>
-            <a
-              href={CONTACT.whatsappLink}
-              target="_blank"
-              rel="noreferrer"
-              data-testid="contact-whatsapp-button"
-              className="mt-8 inline-flex items-center gap-3 border-2 border-paper bg-punche-yellow px-6 py-4 font-heading text-base font-bold uppercase tracking-wide text-ink shadow-[5px_5px_0_0_#E62E4D] transition-transform duration-200 hover:-translate-x-0.5 hover:-translate-y-0.5"
-            >
-              <MessageCircle className="h-5 w-5" />
-              WhatsApp directo
-            </a>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <a
+                href={CONTACT.whatsappLink}
+                target="_blank"
+                rel="noreferrer"
+                data-testid="contact-whatsapp-button"
+                className="inline-flex items-center gap-3 border-2 border-paper bg-punche-yellow px-6 py-4 font-heading text-base font-bold uppercase tracking-wide text-ink shadow-[5px_5px_0_0_#E62E4D] transition-transform duration-200 hover:-translate-x-0.5 hover:-translate-y-0.5"
+              >
+                <MessageCircle className="h-5 w-5" />
+                WhatsApp directo
+              </a>
+              <a
+                href={CONTACT.landlineLink}
+                data-testid="contact-landline-button"
+                className="inline-flex items-center gap-3 border-2 border-paper bg-sky-pop px-6 py-4 font-heading text-base font-bold uppercase tracking-wide text-ink shadow-[5px_5px_0_0_#F5E62B] transition-transform duration-200 hover:-translate-x-0.5 hover:-translate-y-0.5"
+              >
+                <Phone className="h-5 w-5" />
+                {CONTACT.landline}
+              </a>
+            </div>
           </Reveal>
 
           <Reveal delay={0.25}>
@@ -230,6 +240,18 @@ export function ContactSection({ preselected }: { preselected: string | null }) 
                   <Mail className="h-4 w-4" />
                 </span>
                 {CONTACT.email}
+              </li>
+              <li className="flex items-center gap-3 text-sm md:text-base">
+                <span className="flex h-10 w-10 items-center justify-center border-2 border-paper bg-white text-ink">
+                  <MessageCircle className="h-4 w-4" />
+                </span>
+                {CONTACT.whatsapp}
+              </li>
+              <li className="flex items-center gap-3 text-sm md:text-base">
+                <span className="flex h-10 w-10 items-center justify-center border-2 border-paper bg-white text-ink">
+                  <Phone className="h-4 w-4" />
+                </span>
+                {CONTACT.landline}
               </li>
               <li className="flex items-center gap-3 text-sm md:text-base">
                 <span className="flex h-10 w-10 items-center justify-center border-2 border-paper bg-sky-pop text-ink">
@@ -244,9 +266,6 @@ export function ContactSection({ preselected }: { preselected: string | null }) 
                 {CONTACT.hours}
               </li>
             </ul>
-            <p className="mt-8 inline-block -rotate-1 border-2 border-paper bg-crimson px-4 py-2 font-mono text-[11px] font-semibold uppercase tracking-[0.16em]">
-              Respuesta en menos de 24h hábiles
-            </p>
           </Reveal>
         </div>
 

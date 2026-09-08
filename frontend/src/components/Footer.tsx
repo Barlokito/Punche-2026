@@ -1,4 +1,3 @@
-import { SiFacebook, SiInstagram, SiTiktok } from "@icons-pack/react-simple-icons";
 import { Linkedin } from "lucide-react";
 import { CONTACT, LOGO_URL } from "@/lib/content";
 
@@ -6,16 +5,12 @@ const NAV = [
   { href: "#inicio", label: "Inicio" },
   { href: "#nosotros", label: "Nosotros" },
   { href: "#servicios", label: "Servicios" },
-  { href: "#portafolio", label: "Portafolio" },
   { href: "#clientes", label: "Clientes" },
   { href: "#contacto", label: "Contacto" },
 ];
 
 const SOCIALS = [
-  { href: "https://www.instagram.com/punchecreativo", label: "Instagram", Icon: SiInstagram, testid: "footer-social-instagram" },
-  { href: "https://www.facebook.com/punchecreativo", label: "Facebook", Icon: SiFacebook, testid: "footer-social-facebook" },
-  { href: "https://www.tiktok.com/@punchecreativo", label: "TikTok", Icon: SiTiktok, testid: "footer-social-tiktok" },
-  { href: "https://www.linkedin.com/company/punchecreativo", label: "LinkedIn", Icon: Linkedin, testid: "footer-social-linkedin" },
+  { href: "https://www.linkedin.com/company/punche-creativo", label: "LinkedIn", Icon: Linkedin, testid: "footer-social-linkedin" },
 ];
 
 export function Footer() {
@@ -78,6 +73,7 @@ export function Footer() {
             <ul className="mt-4 space-y-2.5 text-sm text-paper/70">
               <li>{CONTACT.email}</li>
               <li>{CONTACT.whatsapp}</li>
+              <li>{CONTACT.landline}</li>
               <li>{CONTACT.location}</li>
               <li>{CONTACT.hours}</li>
             </ul>

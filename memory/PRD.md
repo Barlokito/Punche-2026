@@ -49,6 +49,7 @@ Publicista peruano con 10 años de trayectoria y su agencia creativa "Punche Cre
 - Eliminados los chips de sectores bajo el collage de clientes.
 - Eliminado el botón de fijo junto a WhatsApp (el número 01 761 6464 sigue en la lista de contacto y footer).
 - Nueva foto real (ACTIVACIONES-1536x1152.jpg, escenario SKY) aplicada a los servicios Eventos y Logística & Montaje.
+- Luego: Eventos volvió al collage de 4 fotos reales (eventos.webp); Logística & Montaje conserva la foto SKY.
 
 ## Backlog
 - P0: Datos de contacto reales (WhatsApp, email, redes), logos y fotos reales de clientes/proyectos.

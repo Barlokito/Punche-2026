@@ -30,7 +30,7 @@ export const SERVICES: Service[] = [
     ],
     accent: "yellow",
     image:
-      "https://customer-assets-lqy194kg.emergentagent.net/job_punhe-creativo/artifacts/657h8uhs_ACTIVACIONES-1536x1152.jpg",
+      "https://customer-assets-lqy194kg.emergentagent.net/job_punhe-creativo/artifacts/2srfxxd1_eventos.webp",
     quoteValue: "Eventos y Activaciones",
   },
   {

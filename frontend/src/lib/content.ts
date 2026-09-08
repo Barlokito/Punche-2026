@@ -30,7 +30,7 @@ export const SERVICES: Service[] = [
     ],
     accent: "yellow",
     image:
-      "https://customer-assets-lqy194kg.emergentagent.net/job_punhe-creativo/artifacts/r8gbmr5b_eventos.webp",
+      "https://customer-assets-lqy194kg.emergentagent.net/job_punhe-creativo/artifacts/657h8uhs_ACTIVACIONES-1536x1152.jpg",
     quoteValue: "Eventos y Activaciones",
   },
   {
@@ -102,7 +102,7 @@ export const SERVICES: Service[] = [
     ],
     accent: "crimson",
     image:
-      "https://images.unsplash.com/photo-1563841930606-67e2bce48b78?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwyfHxjb25jZXJ0JTIwZXZlbnQlMjBzdGFnZSUyMGxpZ2h0cyUyMGNyb3dkfGVufDB8fHx8MTc4ODgwNDIzMnww&ixlib=rb-4.1.0&q=85",
+      "https://customer-assets-lqy194kg.emergentagent.net/job_punhe-creativo/artifacts/657h8uhs_ACTIVACIONES-1536x1152.jpg",
     quoteValue: "Logística y Montaje",
   },
 ];

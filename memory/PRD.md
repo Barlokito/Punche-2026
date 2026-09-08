@@ -45,6 +45,11 @@ Publicista peruano con 10 años de trayectoria y su agencia creativa "Punche Cre
 - Contacto real: email fernandoh@punchecreativo.pe (confirmar dominio: el dueño escribió sin TLD), móvil/WhatsApp +51 945 639 059, fijo 01 761 6464 (botón tel:), sin badge "24h".
 - Redes: solo LinkedIn (linkedin.com/company/punche-creativo).
 
+## Cambios (2026-09-08, segunda ronda del dueño)
+- Eliminados los chips de sectores bajo el collage de clientes.
+- Eliminado el botón de fijo junto a WhatsApp (el número 01 761 6464 sigue en la lista de contacto y footer).
+- Nueva foto real (ACTIVACIONES-1536x1152.jpg, escenario SKY) aplicada a los servicios Eventos y Logística & Montaje.
+
 ## Backlog
 - P0: Datos de contacto reales (WhatsApp, email, redes), logos y fotos reales de clientes/proyectos.
 - P1: Panel admin protegido para ver/gestionar consultas (GET /api/contact hoy es público).

@@ -1,4 +1,4 @@
-import { CLIENTS_COLLAGE_URL, SECTORS } from "@/lib/content";
+import { CLIENTS_COLLAGE_URL } from "@/lib/content";
 import { Overline, Reveal } from "@/components/decor";
 
 export function ClientsWall() {
@@ -23,19 +23,6 @@ export function ClientsWall() {
               loading="lazy"
               className="w-full border-2 border-ink object-contain"
             />
-          </div>
-        </Reveal>
-
-        <Reveal delay={0.15}>
-          <div className="mt-8 flex flex-wrap justify-center gap-2" data-testid="clients-sectors">
-            {SECTORS.map((s) => (
-              <span
-                key={s}
-                className="border-2 border-ink bg-white px-3 py-1.5 font-mono text-[11px] font-semibold uppercase tracking-[0.14em]"
-              >
-                {s}
-              </span>
-            ))}
           </div>
         </Reveal>
       </div>

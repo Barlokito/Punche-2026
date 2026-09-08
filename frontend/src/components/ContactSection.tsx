@@ -222,14 +222,6 @@ export function ContactSection({ preselected }: { preselected: string | null }) 
                 <MessageCircle className="h-5 w-5" />
                 WhatsApp directo
               </a>
-              <a
-                href={CONTACT.landlineLink}
-                data-testid="contact-landline-button"
-                className="inline-flex items-center gap-3 border-2 border-paper bg-sky-pop px-6 py-4 font-heading text-base font-bold uppercase tracking-wide text-ink shadow-[5px_5px_0_0_#F5E62B] transition-transform duration-200 hover:-translate-x-0.5 hover:-translate-y-0.5"
-              >
-                <Phone className="h-5 w-5" />
-                {CONTACT.landline}
-              </a>
             </div>
           </Reveal>
 

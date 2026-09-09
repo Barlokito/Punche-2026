@@ -108,7 +108,7 @@ export const SERVICES: Service[] = [
 ];
 
 export const CLIENTS_COLLAGE_URL =
-  "https://customer-assets-lqy194kg.emergentagent.net/job_punhe-creativo/artifacts/1tmznvzv_clientes.webp";
+  "https://static.prod-images.emergentagent.com/jobs/a1659526-6998-49ad-a958-446bebbd5d38/images/00793acd1553fb14eabffa59ea788f7a6c3d0215ac449d421f69029c96a5eefc.jpeg";
 
 export const DRIVE_URL =
   "https://drive.google.com/drive/u/0/folders/1_0HmxVGS4JcQFfd0tW3VneQEEZU6RPYo";
